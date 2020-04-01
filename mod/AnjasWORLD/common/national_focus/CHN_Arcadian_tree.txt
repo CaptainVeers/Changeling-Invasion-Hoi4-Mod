@@ -693,7 +693,7 @@ add_political_power= 500
 	focus = {
 		id = CHN_train_the_garrison_troops
 		icon = GFX_goal_generic_allies_build_infantry
-		x = 15
+		x = 30
 		y = 0
 		cost = 10
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -714,10 +714,9 @@ add_political_power= 500
 	focus = {
 		id = CHN_study_guns_from_home
 		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = army_effort }
-		x = 14
+		prerequisite = { focus = CHN_train_the_garrison_troops }
+		x = 28
 		y = 1
-		relative_position_id = army_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -738,11 +737,10 @@ add_political_power= 500
 	focus = {
 		id = CHN_human_cars
 		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = army_effort }
+		prerequisite = { focus = CHN_train_the_garrison_troops }
 		bypass = { has_tech = motorised_infantry }
-		x = 16
+		x = 32
 		y = 1
-		relative_position_id = army_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -761,10 +759,9 @@ add_political_power= 500
 	focus = {
 		id = CHN_modernize_planning
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = army_effort }
-		x = 15
+		prerequisite = { focus = CHN_train_the_garrison_troops }
+		x = 30
 		y = 1.5
-		relative_position_id = army_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -785,10 +782,9 @@ add_political_power= 500
 	focus = {
 		id = CHN_fuse_elements_from_both_worlds
 		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = equipment_effort }
-		x = 14
+		prerequisite = { focus = CHN_study_guns_from_home }
+		x = 28
 		y = 2
-		relative_position_id = equipment_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -809,10 +805,9 @@ add_political_power= 500
 	focus = {
 		id = CHN_need_more_cars
 		icon = GFX_goal_generic_build_tank
-		prerequisite = { focus = motorization_effort }
-		x = 16
+		prerequisite = { focus = CHN_human_cars }
+		x = 32
 		y = 2
-		relative_position_id = motorization_effort
 		cost = 10
 		
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -832,10 +827,9 @@ add_political_power= 500
 	focus = {
 		id = CHN_planning_department
 		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = doctrine_effort }
-		x = 15
+		prerequisite = { focus = CHN_modernize_planning }
+		x = 30
 		y = 2.5
-		relative_position_id = doctrine_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -854,12 +848,11 @@ add_political_power= 500
 	}
 
 	focus = {
-		id = CHN_army_r&d
+		id = CHN_army_rd
 		icon = GFX_goal_generic_army_artillery2
-		prerequisite = { focus = equipment_effort_2 }
-		x = 14
+		prerequisite = { focus = CHN_fuse_elements_from_both_worlds }
+		x = 28
 		y = 3
-		relative_position_id = equipment_effort_2
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -880,10 +873,9 @@ add_political_power= 500
 	focus = {
 		id = CHN_tanks_from_home
 		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = mechanization_effort }
-		x = 16
+		prerequisite = { focus = CHN_need_more_cars }
+		x = 32
 		y = 3
-		relative_position_id = mechanization_effort
 		cost = 10
 
 		search_filters = {  FOCUS_FILTER_RESEARCH }
@@ -903,12 +895,11 @@ add_political_power= 500
 	focus = {
 		id = CHN_changeling_rangers
 		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = equipment_effort_3 }
-		prerequisite = { focus = doctrine_effort_2 }
-		prerequisite = { focus = armor_effort }
-		x = 15
-		y = 3.5
-		relative_position_id = equipment_effort_3
+		prerequisite = { focus = CHN_army_rd }
+		prerequisite = { focus = CHN_planning_department }
+		prerequisite = { focus = CHN_tanks_from_home }
+		x = 30
+		y = 4
 		cost = 10
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
