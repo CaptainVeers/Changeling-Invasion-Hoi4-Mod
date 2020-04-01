@@ -389,7 +389,7 @@ random_owned_controlled_state={
 		cost = 15
 		available_if_capitulated = yes
 		prerequisite = { focus = CHN_our_place_in_the_new_world }
-		mutually_exclusive = { focus = CHN_path_to_peace }
+		mutually_exclusive = { focus = CHN_path_to_peace = CHN_deal_with_the_devil}
 		ai_will_do = {
 			factor = 100
 		}
@@ -419,7 +419,7 @@ target = SWE
 		available_if_capitulated = yes
 		prerequisite = { focus = CHN_our_place_in_the_new_world }
 		mutually_exclusive = { 
-			focus = CHN_strike_first 
+			focus = CHN_strike_first
 		}
 		mutually_exclusive = { 
 			focus = CHN_deal_with_the_devil 
@@ -512,8 +512,8 @@ target = SWE
 		}
 		completion_reward = {
 			add_manpower= 600000
-add_command_power= 50
-add_war_support= 0.50
+			add_command_power= 50
+			add_war_support= 0.50
 		}
 	}
 
@@ -584,9 +584,9 @@ add_political_power= 120
 		}
 		completion_reward = {
 			create_wargoal= { 
-type = annex_everything 
-target = GER
-}
+				type = annex_everything 
+				target = GER
+			}
 		}
 	}
 
@@ -676,7 +676,7 @@ add_political_power= 500
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = CHN_our_place_in_the_new_world }
-		mutually_exclusive = { focus = CHN_path_to_peace }
+		mutually_exclusive = { focus = CHN_path_to_peace = CHN_strike_first }
 		ai_will_do = {
 			factor = 1
 		}
