@@ -1,0 +1,17 @@
+﻿l_english:
+ CHN_fascism:0 "Queeendom of Arcadia"
+ CHN_fascism_DEF:0 "the Queeendom of Arcadia"
+ CHN_democratic:0 "Republic of Arcadia"
+ CHN_democratic_DEF:0 "the Arcadian Republic"
+ CHN_neutrality:1 "Provisional Military Outpost"
+ CHN_neutrality_DEF:1 "the Military Outpost"
+ CHN_communism:0 "Socialist Republic of Arcadia"
+ CHN_communism_DEF:0 "the Socialist Republic of Arcadia"
+ CHN_fascism_ADJ:0 "Arcadian"
+ CHN_democratic_ADJ:0 "Arcadian"
+ CHN_neutrality_ADJ:0 "Arcadian"
+ CHN_communism_ADJ:0 "Arcadian"
+ CHN:0 "Arcadia"
+ CHN_DEF:0 "Arcadia"
+ CHN_ADJ:0 "Arcadia"
+ 
