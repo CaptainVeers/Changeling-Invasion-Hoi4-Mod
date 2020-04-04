@@ -5,5 +5,5 @@ tags={
 	"Gameplay"
 }
 name="Anjas World"
-supported_version="1.9.0"
+supported_version="1.9.1"
 remote_file_id="2042451073"
