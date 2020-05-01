@@ -113,7 +113,7 @@ bookmarks = {
 			}
 		}
         "CHN"={
-			history = ""
+			history = "CHN_DESC"
 			ideology = neutrality
 			available = { has_dlc = "Waking the Tiger" }
 			ideas = {
@@ -129,7 +129,7 @@ bookmarks = {
 			}
 		}
 		"CHN"={
-			history = ""
+			history = "CHN_DESC"
 			ideology = neutrality
 			available = { NOT = { has_dlc = "Waking the Tiger" } }
 			ideas = {
