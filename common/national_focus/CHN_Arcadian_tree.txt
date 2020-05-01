@@ -366,7 +366,7 @@ random_owned_controlled_state={
 	#Focus for Submit to Brittain
 	focus = {
 		id = CHN_submit_to_brittain
-		icon = GFX_chn_man_homecoming
+		icon = GFX_goal_chn_man_homecoming
 		x = 14
 		y = 9
 		cost = 15
