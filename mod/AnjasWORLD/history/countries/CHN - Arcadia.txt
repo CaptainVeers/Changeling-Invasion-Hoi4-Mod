@@ -140,8 +140,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	sour_loser
-	general_staff
+	changeling_high_command
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation

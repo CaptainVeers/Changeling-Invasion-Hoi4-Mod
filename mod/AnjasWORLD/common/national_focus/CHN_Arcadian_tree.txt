@@ -30,7 +30,7 @@ target = ENG
 	#Focus for Soviet Help
 	focus = {
 		id = CHN_soviet_help
-		icon = GFX_focus_hol_legacy_of_the_de_zeven_provincien_mutiny
+		icon = GFX_goal_chn_red_industry_of_hives
 		x = 20
 		y = 3
 		cost = 10
@@ -106,7 +106,7 @@ random_owned_controlled_state={
 	#Focus for Infiltrate the Danes
 	focus = {
 		id = CHN_infiltrate_the_danes
-		icon = GFX_focus_generic_manpower
+		icon = GFX_goal_chn_man_passport
 		x = 14
 		y = 3
 		cost = 10
@@ -123,7 +123,7 @@ random_owned_controlled_state={
 	#Focus for Nationalism will prevail
 	focus = {
 		id = CHN_nationalism_will_prevail
-		icon = GFX_focus_ger_reichskommisariats
+		icon = GFX_goal_chn_support_chrysalis
 		x = 16
 		y = 2
 		cost = 15
@@ -145,7 +145,7 @@ add_political_power= 500
 	#Focus for German War Industry
 	focus = {
 		id = CHN_german_war_industry
-		icon = GFX_focus_ger_oppose_hitler
+		icon = GFX_goal_chn_factory
 		x = 9
 		y = 9
 		cost = 10
@@ -200,7 +200,7 @@ random_owned_controlled_state={
 	#Focus for War Industy
 	focus = {
 		id = CHN_war_industy
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_goal_chn_man_bullets
 		x = 21
 		y = 10
 		cost = 15
@@ -235,7 +235,7 @@ random_owned_controlled_state={
 	#Focus for Agreement with the danes
 	focus = {
 		id = CHN_agreement_with_the_danes
-		icon = GFX_goal_generic_forceful_treaty
+		icon = GFX_goal_chn_scroll
 		x = 14
 		y = 5
 		cost = 10
@@ -256,7 +256,7 @@ random_owned_controlled_state={
 	#Focus for Norway must fall
 	focus = {
 		id = CHN_norway_must_fall
-		icon = GFX_focus_generic_provoke_border_clashes
+		icon = GFX_goal_chn_eqs
 		x = 20
 		y = 2
 		cost = 15
@@ -276,7 +276,7 @@ target = NOR
 	#Focus for Secure Resources
 	focus = {
 		id = CHN_secure_resources
-		icon = GFX_goal_generic_oil_refinery
+		icon = GFX_goal_chn_oil
 		x = 19
 		y = 10
 		cost = 15
@@ -304,7 +304,7 @@ annex_country = {
 	#Focus for The Unthinkable Option
 	focus = {
 		id = CHN_the_unthinkable_option
-		icon = GFX_goal_support_fourth_int
+		icon = GFX_goal_chn_red_changelings
 		x = 20
 		y = 1
 		cost = 4
@@ -330,7 +330,7 @@ diplomatic_relation = {
 	#Focus for We NEED A NAVY !!!
 	focus = {
 		id = CHN_we_need_a_navy_
-		icon = GFX_goal_generic_navy_battleship
+		icon = GFX_goal_chn_battleships
 		x = 18
 		y = 9
 		cost = 15
@@ -366,7 +366,7 @@ random_owned_controlled_state={
 	#Focus for Submit to Brittain
 	focus = {
 		id = CHN_submit_to_brittain
-		icon = GFX_focus_ger_accept_british_naval_dominance
+		icon = GFX_chn_man_homecoming
 		x = 14
 		y = 9
 		cost = 15
@@ -412,7 +412,7 @@ target = SWE
 	#Focus for Path to Peace
 	focus = {
 		id = CHN_path_to_peace
-		icon = GFX_goal_tripartite_pact
+		icon = GFX_goal_chn_man_business
 		x = 14
 		y = 8
 		cost = 15
@@ -442,7 +442,7 @@ target = SWE
 	#Focus for Ensure Loyalty of the Military
 	focus = {
 		id = CHN_ensure_loyalty_of_the_military
-		icon = GFX_goal_tfv_can_compromise_with_quebec
+		icon = GFX_goal_chn_helmet
 		x = 14
 		y = 4
 		cost = 15
@@ -461,7 +461,7 @@ target = SWE
 	#Focus for The French MUST FALL
 	focus = {
 		id = CHN_the_french_must_fall
-		icon = GFX_focus_fra_le_deluge
+		icon = GFX_chn_french
 		x = 9
 		y = 10
 		cost = 10
@@ -481,7 +481,7 @@ target = SWE
 	#Focus for Bring the revolution to finland
 	focus = {
 		id = CHN_bring_the_revolution_to_finland
-		icon = GFX_goal_generic_war_with_comintern
+		icon = GFX_goal_chn_communist_party
 		x = 20
 		y = 4
 		cost = 10
@@ -501,7 +501,7 @@ target = SWE
 	#Focus for Gear For War
 	focus = {
 		id = CHN_gear_for_war
-		icon = GFX_goal_rhineland
+		icon = GFX_goal_chn_infantry_weapons2
 		x = 23
 		y = 10
 		cost = 15
@@ -520,7 +520,7 @@ target = SWE
 	#Focus for Boost Research
 	focus = {
 		id = CHN_boost_research
-		icon = GFX_goal_tfv_generic_tech_sharing
+		icon = GFX_goal_chn_research
 		x = 14
 		y = 6
 		cost = 15
@@ -537,7 +537,7 @@ target = SWE
 	#Focus for Settle In a New World
 	focus = {
 		id = CHN_settle_in_a_new_world
-		icon = GFX_focus_por_luso_tropicalism
+		icon = GFX_chn_greenland
 		x = 17
 		y = 0
 		cost = 15
@@ -593,7 +593,7 @@ add_political_power= 120
 	#Focus for Who is in charge??
 	focus = {
 		id = CHN_who_is_in_charge
-		icon = GFX_focus_spr_no_pasaran
+		icon = GFX_goal_chn_high_command_hat
 		x = 14
 		y = 1
 		cost = 15
@@ -611,7 +611,7 @@ add_political_power= 120
 	#Focus for Everyone a free changeling!!
 	focus = {
 		id = CHN_everyone_a_free_changeling
-		icon = GFX_goal_support_democracy
+		icon = GFX_goal_chn_hat
 		x = 12
 		y = 2
 		cost = 10
@@ -633,7 +633,7 @@ add_political_power= 500
 	#Focus for Our place in the new world
 	focus = {
 		id = CHN_our_place_in_the_new_world
-		icon = GFX_focus_spa_strengthen_the_supreme_reality_of_spain
+		icon = GFX_goal_chn_man_globe
 		x = 14
 		y = 7
 		cost = 10
@@ -670,7 +670,7 @@ add_political_power= 500
 	#Focus for Deal with the Devil
 	focus = {
 		id = CHN_deal_with_the_devil
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_goal_chn_man_business
 		x = 9
 		y = 8
 		cost = 10
