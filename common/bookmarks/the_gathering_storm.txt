@@ -112,12 +112,14 @@ bookmarks = {
 				GER_ussr_war_goal
 			}
 		}
-                "CHN"={
-			history = "GER_GATHERING_STORM_DESC"
+        "CHN"={
+			history = ""
 			ideology = neutrality
 			available = { has_dlc = "Waking the Tiger" }
 			ideas = {
 				changeling_high_command
+				CHN_science
+				chn_vraks_military_effort
 			}
 			focuses = {
                                 CHN_our_place_in_the_new_world
@@ -127,11 +129,13 @@ bookmarks = {
 			}
 		}
 		"CHN"={
-			history = "GER_GATHERING_STORM_DESC"
+			history = ""
 			ideology = neutrality
 			available = { NOT = { has_dlc = "Waking the Tiger" } }
 			ideas = {
 				changeling_high_command
+				CHN_science
+				chn_vraks_military_effort
 			}
 			focuses = {
                                 CHN_our_place_in_the_new_world
@@ -166,7 +170,16 @@ bookmarks = {
 				JAP_strike_on_the_southern_resource_area
 			}			
 		}
+
+
+                "---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+
+		# minors from DLC ####
 		"SOV"={
+		    minor = yes
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
@@ -180,12 +193,6 @@ bookmarks = {
 			}	
 		}
 
-		"---"={
-			history = "OTHER_GATHERING_STORM_DESC"
-		}
-
-
-		# minors from DLC ####
 		"POL"={
 			minor = yes
 			history = "POL_GATHERING_STORM_DESC"

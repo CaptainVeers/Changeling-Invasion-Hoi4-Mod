@@ -40,6 +40,7 @@ target = ENG
 			factor = 1
 		}
 		completion_reward = {
+			add_research_slot = 2
 			SOV = { add_to_faction = CHN }
 random_owned_controlled_state={
  limit = {
@@ -58,7 +59,7 @@ random_owned_controlled_state={
  instant_build = yes
  }
 
- set_state_flag = 344
+
  }
 		}
 	}
@@ -126,7 +127,7 @@ random_owned_controlled_state={
 		icon = GFX_goal_chn_support_chrysalis
 		x = 16
 		y = 2
-		cost = 15
+		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = CHN_who_is_in_charge }
 		mutually_exclusive = { focus = CHN_everyone_a_free_changeling }
@@ -138,7 +139,7 @@ random_owned_controlled_state={
  ruling_party = fascism 
 elections_allowed = no 
 }
-add_political_power= 500
+add_political_power= 50
 		}
 	}
 
@@ -172,7 +173,7 @@ add_political_power= 500
  instant_build = yes
  }
 
- set_state_flag = 344
+
  }
 
 random_owned_controlled_state={
@@ -192,7 +193,7 @@ random_owned_controlled_state={
  instant_build = yes
  }
 
- set_state_flag = 344
+
  }
 		}
 	}
@@ -227,7 +228,7 @@ random_owned_controlled_state={
  instant_build = yes
  }
 
- set_state_flag = 344
+
  }
 		}
 	}
@@ -276,7 +277,7 @@ target = NOR
 	#Focus for Secure Resources
 	focus = {
 		id = CHN_secure_resources
-		icon = GFX_goal_chn_oil
+		icon = GFX_goal_chn_eqs
 		x = 19
 		y = 10
 		cost = 15
@@ -319,10 +320,10 @@ annex_country = {
  ruling_party = communism
 elections_allowed = yes 
 }
-diplomatic_relation = {
-    country = DEN
-    relation = puppet
-    active = yes
+
+			annex_country = {
+			target = DEN
+			transfer_troops = yes
 }
 		}
 	}
@@ -358,7 +359,7 @@ random_owned_controlled_state={
  instant_build = yes
  }
 
- set_state_flag = 344
+ 
  }
 		}
 	}
@@ -389,7 +390,8 @@ random_owned_controlled_state={
 		cost = 15
 		available_if_capitulated = yes
 		prerequisite = { focus = CHN_our_place_in_the_new_world }
-		mutually_exclusive = { focus = CHN_path_to_peace = CHN_deal_with_the_devil}
+		mutually_exclusive = { focus = CHN_path_to_peace}
+		mutually_exclusive = { focus = CHN_deal_with_the_devil}
 		ai_will_do = {
 			factor = 100
 		}
@@ -497,7 +499,7 @@ target = SWE
 			}
 		}
 	}
-
+	
 	#Focus for Gear For War
 	focus = {
 		id = CHN_gear_for_war
@@ -537,12 +539,11 @@ target = SWE
 	#Focus for Settle In a New World
 	focus = {
 		id = CHN_settle_in_a_new_world
-		icon = GFX_chn_greenland
+		icon = GFX_focus_por_luso_tropicalism
 		x = 17
 		y = 0
 		cost = 15
 		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_SPA_CIVIL_WAR } 
 		ai_will_do = {
 			factor = 90
 		}
@@ -564,7 +565,7 @@ target = SWE
  instant_build = yes
  }
 
- set_state_flag = 344
+
  }
 add_political_power= 120
 		}
@@ -626,7 +627,7 @@ add_political_power= 120
  ruling_party = democratic
 elections_allowed = yes 
 }
-add_political_power= 500
+add_political_power= 50
 		}
 	}
 
@@ -676,7 +677,8 @@ add_political_power= 500
 		cost = 10
 		available_if_capitulated = yes
 		prerequisite = { focus = CHN_our_place_in_the_new_world }
-		mutually_exclusive = { focus = CHN_path_to_peace = CHN_strike_first }
+		mutually_exclusive = { focus = CHN_path_to_peace }
+		mutually_exclusive = { focus = CHN_strike_first }
 		ai_will_do = {
 			factor = 1
 		}
