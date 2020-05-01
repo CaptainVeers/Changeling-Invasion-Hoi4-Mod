@@ -176,6 +176,7 @@ set_popularities = {
 add_ideas = {
 	changeling_high_command
         CHN_science
+		neutrality_idea	
         chn_vraks_military_effort
 	limited_exports
 	limited_conscription
