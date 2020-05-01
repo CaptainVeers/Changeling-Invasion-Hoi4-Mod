@@ -1,0 +1,926 @@
+focus_tree = {
+	id = Arcadian_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHN
+		}
+	}
+	#Focus for Britain must surrender
+	focus = {
+		id = CHN_britain_must_surrender
+		icon = GFX_focus_AST_never_gallipoli
+		x = 9
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_the_french_must_fall }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = ENG
+}
+		}
+	}
+
+	#Focus for Soviet Help
+	focus = {
+		id = CHN_soviet_help
+		icon = GFX_goal_chn_red_industry_of_hives
+		x = 20
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_norway_must_fall }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			SOV = { add_to_faction = CHN }
+random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = arms_factory
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 10
+ add_building_construction = {
+ type = arms_factory
+ level = 4
+ instant_build = yes
+ }
+
+ set_state_flag = 344
+ }
+		}
+	}
+
+	#Focus for Eliminate the mediterranean danger!
+	focus = {
+		id = CHN_eliminate_the_mediterranean_danger
+		icon = GFX_focus_attack_italy
+		x = 14
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_submit_to_brittain }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+			type = annex_everything 
+			target = ITA
+			}
+		}
+	}
+
+	#Focus for Human loyalty
+	focus = {
+		id = CHN_human_loyalty
+		icon = GFX_goal_tfv_can_forced_quebec_conscription
+		x = 22
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_strike_first }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_state_core = 100
+			add_state_core = 337
+			add_state_core = 99
+			add_state_core = 37
+		}
+	}
+
+	#Focus for Infiltrate the Danes
+	focus = {
+		id = CHN_infiltrate_the_danes
+		icon = GFX_goal_chn_man_passport
+		x = 14
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_who_is_in_charge }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+
+	#Focus for Nationalism will prevail
+	focus = {
+		id = CHN_nationalism_will_prevail
+		icon = GFX_goal_chn_support_chrysalis
+		x = 16
+		y = 2
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_who_is_in_charge }
+		mutually_exclusive = { focus = CHN_everyone_a_free_changeling }
+		ai_will_do = {
+			factor = 80
+		}
+		completion_reward = {
+			set_politics= {
+ ruling_party = fascism 
+elections_allowed = no 
+}
+add_political_power= 500
+		}
+	}
+
+	#Focus for German War Industry
+	focus = {
+		id = CHN_german_war_industry
+		icon = GFX_goal_chn_factory
+		x = 9
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_deal_with_the_devil }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = arms_factory
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 10
+ add_building_construction = {
+ type = arms_factory
+ level = 4
+ instant_build = yes
+ }
+
+ set_state_flag = 344
+ }
+
+random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = arms_factory
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 10
+ add_building_construction = {
+ type = arms_factory
+ level = 4
+ instant_build = yes
+ }
+
+ set_state_flag = 344
+ }
+		}
+	}
+
+	#Focus for War Industy
+	focus = {
+		id = CHN_war_industy
+		icon = GFX_goal_chn_man_bullets
+		x = 21
+		y = 10
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_human_loyalty }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = arms_factory
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 10
+ add_building_construction = {
+ type = arms_factory
+ level = 4
+ instant_build = yes
+ }
+
+ set_state_flag = 344
+ }
+		}
+	}
+
+	#Focus for Agreement with the danes
+	focus = {
+		id = CHN_agreement_with_the_danes
+		icon = GFX_goal_chn_scroll
+		x = 14
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_ensure_loyalty_of_the_military }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			diplomatic_relation = {
+    country = DEN
+    relation = puppet
+    active = yes
+}
+		}
+	}
+
+	#Focus for Norway must fall
+	focus = {
+		id = CHN_norway_must_fall
+		icon = GFX_goal_chn_eqs
+		x = 20
+		y = 2
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_the_unthinkable_option }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = NOR
+}
+		}
+	}
+
+	#Focus for Secure Resources
+	focus = {
+		id = CHN_secure_resources
+		icon = GFX_goal_chn_oil
+		x = 19
+		y = 10
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_we_need_a_navy_ }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			create_wargoal= { 
+type = annex_everything 
+target = HOL
+}
+create_wargoal= { 
+type = annex_everything 
+target = BEL
+}
+annex_country = {
+    target = NOR
+    transfer_troops = yes
+}
+		}
+	}
+
+	#Focus for The Unthinkable Option
+	focus = {
+		id = CHN_the_unthinkable_option
+		icon = GFX_goal_chn_red_changelings
+		x = 20
+		y = 1
+		cost = 4
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_settle_in_a_new_world }
+		mutually_exclusive = { focus = CHN_who_is_in_charge }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			set_politics= {
+ ruling_party = communism
+elections_allowed = yes 
+}
+diplomatic_relation = {
+    country = DEN
+    relation = puppet
+    active = yes
+}
+		}
+	}
+
+	#Focus for We NEED A NAVY !!!
+	focus = {
+		id = CHN_we_need_a_navy_
+		icon = GFX_goal_chn_battleships
+		x = 18
+		y = 9
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_strike_first }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			navy_experience= 10
+random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = dockyard
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 10
+ add_building_construction = {
+ type = dockyard
+ level = 10
+ instant_build = yes
+ }
+
+ set_state_flag = 344
+ }
+		}
+	}
+
+	#Focus for Submit to Brittain
+	focus = {
+		id = CHN_submit_to_brittain
+		icon = GFX_chn_man_homecoming
+		x = 14
+		y = 9
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_path_to_peace }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			ENG = { add_to_faction = CHN }
+		}
+	}
+
+	#Focus for Strike First
+	focus = {
+		id = CHN_strike_first
+		icon = GFX_focus_usa_focus_on_europe
+		x = 20
+		y = 8
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_our_place_in_the_new_world }
+		mutually_exclusive = { focus = CHN_path_to_peace = CHN_deal_with_the_devil}
+		ai_will_do = {
+			factor = 100
+		}
+		available = {
+			has_government = fascism
+		}
+		completion_reward = {
+			annex_country = {
+			target = DEN
+			transfer_troops = yes
+		}
+
+create_wargoal= { 
+type = annex_everything 
+target = SWE
+}
+		}
+	}
+
+	#Focus for Path to Peace
+	focus = {
+		id = CHN_path_to_peace
+		icon = GFX_goal_chn_man_business
+		x = 14
+		y = 8
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_our_place_in_the_new_world }
+		mutually_exclusive = { 
+			focus = CHN_strike_first
+		}
+		mutually_exclusive = { 
+			focus = CHN_deal_with_the_devil 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government = democratic
+		}
+		completion_reward = {
+			diplomatic_relation = {
+				country = ENG
+				relation = guarantee
+				active = yes
+			}
+		}
+	}
+
+	#Focus for Ensure Loyalty of the Military
+	focus = {
+		id = CHN_ensure_loyalty_of_the_military
+		icon = GFX_goal_chn_helmet
+		x = 14
+		y = 4
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_infiltrate_the_danes }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT } 
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_command_power= 50
+			add_war_support= 0.20
+		}
+	}
+
+	#Focus for The French MUST FALL
+	focus = {
+		id = CHN_the_french_must_fall
+		icon = GFX_chn_french
+		x = 9
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_german_war_industry }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+				type = annex_everything 
+				target = FRA
+			}
+		}
+	}
+
+	#Focus for Bring the revolution to finland
+	focus = {
+		id = CHN_bring_the_revolution_to_finland
+		icon = GFX_goal_chn_communist_party
+		x = 20
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_soviet_help }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+				type = annex_everything 
+				target = FIN
+			}
+		}
+	}
+
+	#Focus for Gear For War
+	focus = {
+		id = CHN_gear_for_war
+		icon = GFX_goal_chn_infantry_weapons2
+		x = 23
+		y = 10
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_human_loyalty }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_manpower= 600000
+			add_command_power= 50
+			add_war_support= 0.50
+		}
+	}
+
+	#Focus for Boost Research
+	focus = {
+		id = CHN_boost_research
+		icon = GFX_goal_chn_research
+		x = 14
+		y = 6
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_agreement_with_the_danes }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_research_slot = 4
+		}
+	}
+
+	#Focus for Settle In a New World
+	focus = {
+		id = CHN_settle_in_a_new_world
+		icon = GFX_chn_greenland
+		x = 17
+		y = 0
+		cost = 15
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_SPA_CIVIL_WAR } 
+		ai_will_do = {
+			factor = 90
+		}
+		completion_reward = {
+			random_owned_controlled_state={
+ limit = {
+ free_building_slots = {
+ building = industrial_complex
+ size > 0
+ include_locked = yes
+ }
+
+ }
+
+ add_extra_state_shared_building_slots = 10
+ add_building_construction = {
+ type = industrial_complex
+ level = 4
+ instant_build = yes
+ }
+
+ set_state_flag = 344
+ }
+add_political_power= 120
+		}
+	}
+
+	#Focus for Strike the Eagle
+	focus = {
+		id = CHN_strike_the_eagle
+		icon = GFX_focus_hol_war_on_pacifism
+		x = 17
+		y = 10
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_we_need_a_navy_ }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+				type = annex_everything 
+				target = GER
+			}
+		}
+	}
+
+	#Focus for Who is in charge??
+	focus = {
+		id = CHN_who_is_in_charge
+		icon = GFX_goal_chn_high_command_hat
+		x = 14
+		y = 1
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_settle_in_a_new_world }
+		mutually_exclusive = { focus = CHN_the_unthinkable_option }
+		ai_will_do = {
+			factor = 100
+		}
+		completion_reward = {
+			add_stability= 0.90
+		}
+	}
+
+	#Focus for Everyone a free changeling!!
+	focus = {
+		id = CHN_everyone_a_free_changeling
+		icon = GFX_goal_chn_hat
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_who_is_in_charge }
+		mutually_exclusive = { focus = CHN_nationalism_will_prevail }
+		ai_will_do = {
+			factor = 60
+		}
+		completion_reward = {
+			set_politics= {
+ ruling_party = democratic
+elections_allowed = yes 
+}
+add_political_power= 500
+		}
+	}
+
+	#Focus for Our place in the new world
+	focus = {
+		id = CHN_our_place_in_the_new_world
+		icon = GFX_goal_chn_man_globe
+		x = 14
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_boost_research }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			add_political_power= 50
+		}
+	}
+
+	#Focus for Destroy fascism
+	focus = {
+		id = CHN_destroy_fascism
+		icon = GFX_focus_generic_anti_fascist_diplomacy
+		x = 14
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_eliminate_the_mediterranean_danger }
+		ai_will_do = {
+			factor = 1
+		}
+		completion_reward = {
+			create_wargoal= { 
+				type = annex_everything 
+				target = GER
+			}
+		}
+	}
+
+	#Focus for Deal with the Devil
+	focus = {
+		id = CHN_deal_with_the_devil
+		icon = GFX_goal_chn_man_business
+		x = 9
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CHN_our_place_in_the_new_world }
+		mutually_exclusive = { focus = CHN_path_to_peace = CHN_strike_first }
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_government = fascism
+		}
+		completion_reward = {
+			GER = { add_to_faction = CHN }
+		}
+	}
+	
+	#Army shite
+	
+	focus = {
+		id = CHN_train_the_garrison_troops
+		icon = GFX_goal_generic_allies_build_infantry
+		x = 30
+		y = 0
+		cost = 10
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = CHN_study_guns_from_home
+		icon = GFX_goal_generic_small_arms
+		prerequisite = { focus = CHN_train_the_garrison_troops }
+		x = 28
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = CHN_human_cars
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = CHN_train_the_garrison_troops }
+		bypass = { has_tech = motorised_infantry }
+		x = 32
+		y = 1
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				bonus = 3.0
+				technology = motorised_infantry
+			}
+		}
+	}
+
+	focus = {
+		id = CHN_modernize_planning
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = CHN_train_the_garrison_troops }
+		x = 30
+		y = 1.5
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = CHN_fuse_elements_from_both_worlds
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = CHN_study_guns_from_home }
+		x = 28
+		y = 2
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = CHN_need_more_cars
+		icon = GFX_goal_generic_build_tank
+		prerequisite = { focus = CHN_human_cars }
+		x = 32
+		y = 2
+		cost = 10
+		
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = motorized_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	focus = {
+		id = CHN_planning_department
+		icon = GFX_goal_generic_army_doctrines
+		prerequisite = { focus = CHN_modernize_planning }
+		x = 30
+		y = 2.5
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			army_experience = 5
+			add_tech_bonus = {
+				name = land_doc_bonus
+				bonus = 1.0
+				uses = 1
+				category = land_doctrine
+			}
+		}
+	}
+
+	focus = {
+		id = CHN_army_rd
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = CHN_fuse_elements_from_both_worlds }
+		x = 28
+		y = 3
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = infantry_artillery_bonus
+				ahead_reduction = 2
+				uses = 1
+				category = infantry_weapons
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = CHN_tanks_from_home
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = CHN_need_more_cars }
+		x = 32
+		y = 3
+		cost = 10
+
+		search_filters = {  FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = CHN_changeling_rangers
+		icon = GFX_goal_generic_special_forces
+		prerequisite = { focus = CHN_army_rd }
+		prerequisite = { focus = CHN_planning_department }
+		prerequisite = { focus = CHN_tanks_from_home }
+		x = 30
+		y = 4
+		cost = 10
+
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_ideas = special_forces
+			add_tech_bonus = {
+				name = special_forces_bonus
+				bonus = 1.0
+				uses = 1
+				technology = paratroopers
+				technology = paratroopers2
+				technology = marines
+				technology = marines2
+				technology = tech_mountaineers
+				technology = tech_mountaineers2
+			}
+		}
+	}
+
+#End of focuses 
+ }
