@@ -455,6 +455,7 @@ target = SWE
 			factor = 100
 		}
 		completion_reward = {
+		    army_experience = 80
 			add_command_power= 50
 			add_war_support= 0.20
 		}
