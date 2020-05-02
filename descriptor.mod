@@ -1,9 +1,9 @@
-version="1.2"
+version="1.6"
 tags={
 	"Alternative History"
 	"National Focuses"
 	"Gameplay"
 }
-name="Anjas World"
+name="Changeling Invasion"
 supported_version="1.9.1"
 remote_file_id="2042451073"
