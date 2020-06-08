@@ -545,30 +545,35 @@ target = SWE
 		y = 0
 		cost = 15
 		available_if_capitulated = yes
+
 		ai_will_do = {
 			factor = 90
 		}
 		completion_reward = {
-			random_owned_controlled_state={
- limit = {
- free_building_slots = {
- building = industrial_complex
- size > 0
- include_locked = yes
- }
+		  
+		  random_owned_controlled_state={
 
- }
+			   add_extra_state_shared_building_slots = 5
 
- add_extra_state_shared_building_slots = 10
- add_building_construction = {
- type = industrial_complex
- level = 4
- instant_build = yes
- }
-
-
- }
-add_political_power= 120
+                add_building_construction = {
+                type = industrial_complex
+                level = 1
+				instant_build = yes } 
+			  
+			 
+                add_building_construction = {
+                type = industrial_complex
+                level = 1
+				instant_build = yes } 
+			  
+			  
+                add_building_construction = {
+                type = industrial_complex
+                level = 1
+			    instant_build = yes } 
+		    }
+			  
+           add_political_power= 130
 		}
 	}
 
