@@ -81,7 +81,6 @@ bookmarks = {
 				ENG_war_with_italy
 			}
 		}
-
 		"GER"={
 			history = "GER_GATHERING_STORM_DESC"
 			ideology = fascism
@@ -112,37 +111,20 @@ bookmarks = {
 				GER_ussr_war_goal
 			}
 		}
-        "CHN"={
-			history = "CHN_DESC"
-			ideology = neutrality
-			available = { has_dlc = "Waking the Tiger" }
-			ideas = {
-				changeling_high_command
-				CHN_science
-				chn_vraks_military_effort
-			}
-			focuses = {
-                                CHN_our_place_in_the_new_world
-                                CHN_settle_in_a_new_world
-				CHN_the_unthinkable_option
-
-			}
-		}
 		"CHN"={
 			history = "CHN_DESC"
 			ideology = neutrality
-			available = { NOT = { has_dlc = "Waking the Tiger" } }
 			ideas = {
 				changeling_high_command
 				CHN_science
 				chn_vraks_military_effort
 			}
 			focuses = {
-                                CHN_our_place_in_the_new_world
-                                CHN_settle_in_a_new_world
+                CHN_our_place_in_the_new_world
+                CHN_settle_in_a_new_world
 				CHN_the_unthinkable_option
 			}
-			}
+		}
 		"ITA"={
 			history = "ITA_GATHERING_STORM_DESC"
 			ideology = fascism
@@ -171,15 +153,15 @@ bookmarks = {
 			}			
 		}
 
-
-                "---"={
+		"---"={
 			history = "OTHER_GATHERING_STORM_DESC"
 		}
 
 
 		# minors from DLC ####
+
 		"SOV"={
-		    minor = yes
+			minor = yes
 			history = "SOV_GATHERING_STORM_DESC"
 			ideology = communism
 			ideas = {
@@ -192,8 +174,7 @@ bookmarks = {
 				SOV_war_with_uk
 			}	
 		}
-
-		"POL"={
+        "POL"={
 			minor = yes
 			history = "POL_GATHERING_STORM_DESC"
 			ideology = neutrality
@@ -328,9 +309,9 @@ bookmarks = {
 				YUG_idea_serbian_general_staff
 			}
 			focuses = {
-				YUG_western_focus
+				YUG_end_the_regency
 				YUG_abolish_the_monarchy
-				YUG_establish_the_banovina_of_croatia
+				YUG_dissolve_serbia
 			}
 		}
 		"CHI"={
@@ -510,6 +491,54 @@ bookmarks = {
 				POR_estado_novo
 				POR_workers_of_iberia_unite
 				POR_luso_tropicalism
+			}
+		}
+
+		"BUL"={
+			minor = yes
+			history = "BUL_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				BUL_second_national_catastrophe
+				BUL_army_restrictions
+				BUL_imro_01
+			}
+			focuses = {
+				BUL_the_fatherland_front
+				BUL_restore_the_bulgarian_patriarchate
+				BUL_prussia_of_the_balkans
+			}
+		}
+
+		"GRE"={
+			minor = yes
+			history = "GRE_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				GRE_debt_to_the_ifc
+				GRE_schachtplan
+				GRE_political_instability_dummy
+			}
+			focuses = {
+				GRE_metaxism_focus
+				GRE_resurrecting_the_megali_idea
+				GRE_stage_an_incident_in_the_bosporus
+			}
+		}
+
+		"TUR"={
+			minor = yes
+			history = "TUR_GATHERING_STORM_DESC"
+			ideology = neutrality
+			ideas = {
+				TUR_sectarian_woes
+				TUR_disorganised_armed_forces
+				TUR_debt_council
+			}
+			focuses = {
+				TUR_ratify_the_six_arrows
+				TUR_reaffirm_the_balkan_pact
+				TUR_pivot_to_the_past
 			}
 		}
 		
