@@ -1,6 +1,6 @@
 name="Changeling Invasion"
 path="mod/Changeling-Invasion-Hoi4-Mod/"
-version="1.7"
+version="1.8"
 tags={
 	"Alternative History"
 	"National Focuses"
