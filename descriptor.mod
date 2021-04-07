@@ -1,3 +1,4 @@
+name="Changeling Invasion"
 path="mod/Changeling-Invasion-Hoi4-Mod/"
 version="1.7"
 tags={
@@ -5,6 +6,5 @@ tags={
 	"National Focuses"
 	"Gameplay"
 }
-name="Changeling Invasion"
 supported_version="1.10.*"
 remote_file_id="2042451073"
