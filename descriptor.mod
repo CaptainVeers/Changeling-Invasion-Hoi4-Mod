@@ -1,3 +1,4 @@
+path="mod/Changeling-Invasion-Hoi4-Mod/"
 version="1.7"
 tags={
 	"Alternative History"
